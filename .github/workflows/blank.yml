@@ -1,0 +1,9 @@
+require 'discordrb'
+
+bot = Discordrb::Bot.new token: '<token here>'
+
+bot.message(with_text: 'Hi!') do |event|
+  event.respond 'Hello!!'
+end
+
+bot.run
